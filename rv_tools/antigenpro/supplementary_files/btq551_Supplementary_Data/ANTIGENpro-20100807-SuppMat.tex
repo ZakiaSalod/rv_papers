@@ -1,0 +1,44 @@
+\documentclass{bioinfo}
+\copyrightyear{2010}
+\pubyear{2010}
+\begin{document}
+\firstpage{1}
+\title[Prediction of protein antigenicity]{High-throughput prediction of protein antigenicity using protein microarray data\\\vspace{0.5cm}SUPPLEMENTARY MATERIAL\\\vspace{0.5cm}}
+\author[C.N. Magnan \textit{et al}]{Christophe N. Magnan$^1$, Michael Zeller$^1$, Matthew A. Kayala$^1$,\\
+Adam Vigil$^2$, Arlo Randall$^1$, Philip L. Felgner$^{1,2}$ and Pierre Baldi$^1$}
+\address{$^1$Institute for Genomics and Bioinformatics, School of Information and Computer Sciences and\\
+$^2$Department of Medicine, Division of Infectious Diseases. University of California, Irvine, CA, USA.}
+\history{Received on XXXXX; revised on XXXXX; accepted on XXXXX}
+\editor{Associate Editor: XXXXXXX}
+\onecolumn
+\maketitle
+
+\newcommand{\dataset}[1]{\textbf{\texttt{#1}}}
+\newcommand{\up}[1]{\texttt{#1}}
+
+\begin{table}[!h]
+\processtable{UniProt identifiers of the 213 protective antigens in \dataset{PAntigens}.\label{table:identifiers}}
+{\begin{tabular}{lllllllllllll}\toprule
+\up{O07175}&\up{O09530}&\up{O09635}&\up{O10247}&\up{O10645}&\up{O10683}&\up{O12347}&\up{O30405}&\up{O30527}&\up{O34097}&\up{O36766}&\up{O37453}&\up{O39843}\\
+\up{O40239}&\up{O50430}&\up{O50917}&\up{O56048}&\up{O56638}&\up{O57135}&\up{O57136}&\up{O83867}&\up{O89126}&\up{O92567}&\up{O92944}&\up{P00004}&\up{P00698}\\
+\up{P00711}&\up{P01426}&\up{P01500}&\up{P01556}&\up{P01580}&\up{P01586}&\up{P02185}&\up{P02247}&\up{P02687}&\up{P02710}&\up{P02714}&\up{P02977}&\up{P03108}\\
+\up{P03129}&\up{P03141}&\up{P03531}&\up{P04326}&\up{P04583}&\up{P04935}&\up{P05825}&\up{P08191}&\up{P09345}&\up{P09990}&\up{P0A0L2}&\up{P0A0R3}&\up{P0A4V6}\\
+\up{P0A564}&\up{P0A566}&\up{P0A568}&\up{P0A570}&\up{P0A5B7}&\up{P0A5P2}&\up{P0A5P6}&\up{P0A5P8}&\up{P0A5Q2}&\up{P0A5Q4}&\up{P0A670}&\up{P0AFZ6}&\up{P0C0J1}\\
+\up{P0C2J9}&\up{P0C2T1}&\up{P0C6L9}&\up{P0C7U7}&\up{P10324}&\up{P10787}&\up{P11198}&\up{P11210}&\up{P11231}&\up{P11439}&\up{P12554}&\up{P13794}&\up{P15453}\\
+\up{P15712}&\up{P16071}&\up{P16665}&\up{P17280}&\up{P17282}&\up{P17285}&\up{P17332}&\up{P17664}&\up{P17739}&\up{P19649}&\up{P20626}&\up{P21171}&\up{P21347}\\
+\up{P24030}&\up{P24569}&\up{P24906}&\up{P25187}&\up{P26948}&\up{P27053}&\up{P32722}&\up{P33484}&\up{P35256}&\up{P35258}&\up{P35260}&\up{P35971}&\up{P36318}\\
+\up{P36731}&\up{P43838}&\up{P45996}&\up{P58099}&\up{P59206}&\up{P59595}&\up{P60811}&\up{P69178}&\up{P69359}&\up{P69687}&\up{P70854}&\up{P87671}&\up{P89237}\\
+\up{P89316}&\up{P89481}&\up{P96943}&\up{Q01552}&\up{Q04245}&\up{Q07337}&\up{Q14VH5}&\up{Q197M9}&\up{Q19AX9}&\up{Q1KVI3}&\up{Q24797}&\up{Q27YE8}&\up{Q29YA6}\\
+\up{Q2LC28}&\up{Q2PDK5}&\up{Q38L42}&\up{Q3K3Z5}&\up{Q3S565}&\up{Q400Z7}&\up{Q45321}&\up{Q46412}&\up{Q48427}&\up{Q48473}&\up{Q48900}&\up{Q4KRW2}&\up{Q4KRX1}\\
+\up{Q4TUW2}&\up{Q53348}&\up{Q53653}&\up{Q53990}&\up{Q56I18}&\up{Q5BMC7}&\up{Q5XE71}&\up{Q5ZXP3}&\up{Q64FG1}&\up{Q67148}&\up{Q68287}&\up{Q6EZA6}&\up{Q6RXC2}\\
+\up{Q6SW59}&\up{Q6SW76}&\up{Q6V1Q9}&\up{Q71TT1}&\up{Q71TT2}&\up{Q77DJ5}&\up{Q77Q74}&\up{Q79F92}&\up{Q79FV1}&\up{Q7DAL7}&\up{Q7DHH4}&\up{Q7X3W5}&\up{Q87L97}\\
+\up{Q88229}&\up{Q8AYT7}&\up{Q8DN05}&\up{Q8JMH1}&\up{Q8K6K5}&\up{Q8K7T1}&\up{Q8NZA4}&\up{Q8V1K2}&\up{Q8VQ82}&\up{Q8ZP50}&\up{Q91E46}&\up{Q91UA3}&\up{Q93V22}\\
+\up{Q99YT0}&\up{Q99ZD7}&\up{Q99ZG1}&\up{Q9A0C0}&\up{Q9A180}&\up{Q9A198}&\up{Q9A1S0}&\up{Q9A1S2}&\up{Q9AG74}&\up{Q9DS89}&\up{Q9L5B9}&\up{Q9LA13}&\up{Q9RF12}\\
+\up{Q9RM68}&\up{Q9RN24}&\up{Q9S6N1}&\up{Q9XDB6}&\up{Q9YQS7}&\up{Q9Z374}&\up{Q9Z4J8}&\up{Q9ZHG7}&\up{Q9ZKX5}&\up{Q9ZMJ1}&\up{Q9ZN37}\\
+\multicolumn{3}{l}{\up{P03300 (a.a. 70-341)}}&\multicolumn{3}{l}{\up{P03300 (a.a. 580-881)}}&\multicolumn{3}{l}{\up{P03303 (a.a. 332-567)}}&\multicolumn{3}{l}{\up{P04591 (a.a. 2-132)}}&\\
+\multicolumn{3}{l}{\up{P09866 (a.a. 775-1126)}}&\multicolumn{3}{l}{\up{P19550 (a.a. 32-502)}}&\multicolumn{3}{l}{\up{P32886 (a.a. 295-794)}}&&&&\\\botrule
+\end{tabular}}{}
+\end{table}
+
+\end{document}
+
